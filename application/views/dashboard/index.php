@@ -1,13 +1,10 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Aditya
- * Date: 10/07/2015
- * Time: 12:47 PM
+ * User: Lynn
+ * Date: 7/16/15
+ * Time: 7:43 PM
  */
-
 ?>
 
-Dashboard
-<br><br><br>
-<a href="index.php/News/" class="btn btn-primary btn-lg" role="button">Primary link</a>
+<h1>Dashboard</h1>

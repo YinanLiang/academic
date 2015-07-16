@@ -1,16 +1,21 @@
 <?php
-
-$this->load->helper('url');
+/**
+ * Created by PhpStorm.
+ * User: Lynn
+ * Date: 7/16/15
+ * Time: 7:19 PM
+ */
+defined('BASEPATH') OR exit('No direct script access allowed');
+echo doctype('html5');
 ?>
 
 <html>
 <head>
     <title>Academic Section</title>
-
-    <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>" />
-    <link rel="stylesheet" href="<?php echo base_url("assets/css/sticky-footer-navbar.css"); ?>" />
-
+    <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css");?>" />
+    <link rel="stylesheet" href="<?php echo base_url("assets/css/sticky-footer-navbar.css");?>" />
 </head>
+
 <body>
 
 <!-- Static navbar -->
@@ -23,13 +28,13 @@ $this->load->helper('url');
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Academic Section</a>
+            <a class="navbar-brand" href="<?php echo base_url()?>">Academic Section</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="dashboard">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="active"><a href="<?php echo base_url()?>">Home</a></li>
+                <li><a href="<?php echo base_url("index.php/site/about")?>">About</a></li>
+                <li><a href="<?php echo base_url("index.php/site/contact")?>">Contact</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                     <ul class="dropdown-menu">

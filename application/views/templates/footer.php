@@ -1,9 +1,9 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Aditya
- * Date: 10/07/2015
- * Time: 12:47 AM
+ * User: Lynn
+ * Date: 7/16/15
+ * Time: 7:30 PM
  */
 ?>
 
@@ -19,17 +19,17 @@
             </div>
 
             <div class="col-md-6">
-            <p class="text-muted text-right">Developed By: XYZ</p>
-        </div>
+                <p class="text-muted text-right">Developed By: XYZ</p>
+            </div>
 
-    </div>
+        </div>
 
     </div>
 </footer>
 
-
-<script type="text/javascript" src="<?php echo "assets/js/jquery-2.1.4.js"; ?>"></script>
-<script type="text/javascript" src="<?php echo "assets/js/bootstrap.js"; ?>"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
+
