@@ -18,7 +18,14 @@ class Site extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
+	public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('record_model');
+
+    }
+
+    public function index()
 	{
 		$this->load->view('templates/header');
         $this->load->view('dashboard/index');
@@ -43,6 +50,18 @@ class Site extends CI_Controller {
     {
         $this->load->view('templates/header');
         $this->load->view('form/index');
+        $this->load->view('templates/footer');
+    }
+
+    public function table()
+    {
+
+        //Fetch fields of the table
+        $data['fields'] = $this->record_model->getTableFields();
+        //Fetch all records
+        $data['records'] = $this->record_model->select(0);
+        $this->load->view('templates/header');
+        $this->load->view('table/index', $data);
         $this->load->view('templates/footer');
     }
 

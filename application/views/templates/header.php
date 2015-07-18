@@ -36,6 +36,7 @@ echo doctype('html5');
                 <li><a href="<?php echo base_url("index.php/site/about")?>">About</a></li>
                 <li><a href="<?php echo base_url("index.php/site/contact")?>">Contact</a></li>
                 <li><a href="<?php echo base_url("index.php/site/form")?>">Form</a></li>
+                <li><a href="<?php echo base_url("index.php/site/table")?>">Table</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                     <ul class="dropdown-menu">

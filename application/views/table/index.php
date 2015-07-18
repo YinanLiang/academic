@@ -6,6 +6,7 @@
  * Time: 7:14 PM
  */
 ?>
+
 <div class="row">
     <div class="col-lg-12">
         <h2>Basic Table</h2>
