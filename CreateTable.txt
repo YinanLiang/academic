@@ -1,0 +1,15 @@
+SQL to create table for form
+
+CREATE TABLE academic.forms (
+        id int(11) NOT NULL AUTO_INCREMENT,
+        textInput varchar(128),
+        file TINYBLOB,
+        textArea varchar(128),
+        checkbox varchar(128), 
+       	inlineCheckbox varchar(128),
+       	optionsRadios varchar(128),
+        optionsRadiosInline varchar(128),
+        singleSelect varchar(128),
+        multipleSelect varchar(128),
+        PRIMARY KEY (id)
+);

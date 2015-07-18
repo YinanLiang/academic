@@ -1,0 +1,34 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Lynn
+ * Date: 7/18/15
+ * Time: 4:53 PM
+ */
+
+class Record_Model extends CI_Model {
+
+    public function __construct() {
+        //connect to database
+        $this->load->database();
+    }
+
+    public function insert($data) {
+
+        $this->db->insert('forms', $data);
+    }
+
+    public function select($numRows) {
+        //select specific number of rows from table. If numRows is 0, then fetch all records
+        if ($numRows === 0) {
+            //fetch the entire table
+            return $this->db->get('forms')->result();
+        } else {
+
+        };
+    }
+
+    public function getTableFields() {
+        return $this->db->list_fields('forms');
+    }
+}
