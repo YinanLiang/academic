@@ -50,17 +50,17 @@
                         <label>Checkboxes</label>
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" value="1" name="checkbox">Checkbox 1
+                                <input type="checkbox" value="1" name="checkbox[]">Checkbox 1
                             </label>
                         </div>
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" value="2" name="checkbox">Checkbox 2
+                                <input type="checkbox" value="2" name="checkbox[]">Checkbox 2
                             </label>
                         </div>
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" value="3" name="checkbox">Checkbox 3
+                                <input type="checkbox" value="3" name="checkbox[]">Checkbox 3
                             </label>
                         </div>
                     </div>
@@ -68,13 +68,13 @@
                     <div class="form-group">
                         <label>Inline Checkboxes</label>
                         <label class="checkbox-inline">
-                            <input type="checkbox" value="1" name="inlineCheckbox">1
+                            <input type="checkbox" value="1" name="inlineCheckbox[]">1
                         </label>
                         <label class="checkbox-inline">
-                            <input type="checkbox" value="2" name="inlineCheckbox">2
+                            <input type="checkbox" value="2" name="inlineCheckbox[]">2
                         </label>
                         <label class="checkbox-inline">
-                            <input type="checkbox" value="3" name="inlineCheckbox">3
+                            <input type="checkbox" value="3" name="inlineCheckbox[]">3
                         </label>
                     </div>
 

@@ -12,6 +12,7 @@ class Record extends CI_Controller {
 
 
     public function submitForm() {
+
         $this->record_model->insert($_POST);
 
         //switch to table page after submit form
