@@ -23,7 +23,7 @@
         <div class="row">
             <div class="col-lg-6">
 
-                <form role="form" action="<?php echo base_url("index.php/form/submitForm");?>" method="post">
+                <form role="form" action="<?php echo base_url("index.php/record/submitForm");?>" method="post">
 
                     <div class="form-group">
                         <label>Text Input</label>

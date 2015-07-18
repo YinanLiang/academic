@@ -45,5 +45,6 @@ class Site extends CI_Controller {
         $this->load->view('form/index');
         $this->load->view('templates/footer');
     }
+
 }
 
