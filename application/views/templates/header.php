@@ -15,7 +15,48 @@ echo doctype('html5');
     <link rel="stylesheet" href="<?php echo base_url("assets/material.min.css");?>">
     <link rel="stylesheet" href="<?php echo base_url("assets/styles.css");?>">
     <script src="<?php echo base_url("assets/material.min.js");?>"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" -->
+
+    <!-- self hosted material icon fonts -->
+    <style>
+        @font-face {
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+            src: local('Material Icons'),
+            local('MaterialIcons-Regular'),
+            url(<?php echo base_url("assets/icons/iconfont/MaterialIcons-Regular.woff2");?>) format('woff2'),
+            url(<?php echo base_url("assets/icons/iconfont/MaterialIcons-Regular.woff");?>) format('woff'),
+            url(<?php echo base_url("assets/icons/iconfont/MaterialIcons-Regular.ttf");?>) format('truetype');
+        }
+
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;  /* Preferred icon size */
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+
+            /* Support for all WebKit browsers. */
+            -webkit-font-smoothing: antialiased;
+            /* Support for Safari and Chrome. */
+            text-rendering: optimizeLegibility;
+
+            /* Support for Firefox. */
+            -moz-osx-font-smoothing: grayscale;
+
+            /* Support for IE. */
+            font-feature-settings: 'liga';
+        }
+    </style>
+
 </head>
 
 <body>
@@ -24,7 +65,7 @@ echo doctype('html5');
     <!-- header -->
     <header class="demo-header mdl-layout__header mdl-color--white mdl-color--grey-100 mdl-color-text--grey-600">
         <div class="mdl-layout__header-row">
-            <span class="mdl-layout-title">Academic Section</span>
+            <span class="mdl-layout-title"><?php echo $title?></span>
             <div class="mdl-layout-spacer"></div>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
                 <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
@@ -64,11 +105,11 @@ echo doctype('html5');
             </div>
         </header>
         <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-            <a class="mdl-navigation__link" href="<?php echo base_url()?>">Home</a>
-            <a class="mdl-navigation__link" href="<?php echo base_url("index.php/site/about")?>">About</a>
-            <a class="mdl-navigation__link" href="<?php echo base_url("index.php/site/contact")?>">Contact</a>
-            <a class="mdl-navigation__link" href="<?php echo base_url("index.php/site/form")?>">Form</a>
-            <a class="mdl-navigation__link" href="<?php echo base_url("index.php/site/table")?>">Table</a>
+            <a class="mdl-navigation__link" href="<?php echo base_url()?>"><i class="mdl-color-text--blue-grey-400 material-icons">home</i>Home</a>
+            <a class="mdl-navigation__link" href="<?php echo base_url("index.php/site/about")?>"><i class="mdl-color-text--blue-grey-400 material-icons">home</i>About</a>
+            <a class="mdl-navigation__link" href="<?php echo base_url("index.php/site/contact")?>"><i class="mdl-color-text--blue-grey-400 material-icons">home</i>Contact</a>
+            <a class="mdl-navigation__link" href="<?php echo base_url("index.php/site/form")?>"><i class="mdl-color-text--blue-grey-400 material-icons">home</i>Form</a>
+            <a class="mdl-navigation__link" href="<?php echo base_url("index.php/site/table")?>"><i class="mdl-color-text--blue-grey-400 material-icons">home</i>Table</a>
             <div class="mdl-layout-spacer"></div>
             <a class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons">help_outline</i></a>
         </nav>

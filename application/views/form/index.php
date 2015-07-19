@@ -6,226 +6,51 @@
  * Time: 4:24 PM
  */
 ?>
-<div id="page-wrapper">
 
-    <div class="container-fluid">
-
-        <!-- Page Heading -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">
-                    Forms
-                </h1>
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+    <div class="mdl-card__supporting-text">
+        <!-- Simple Textfield -->
+        <form action="<?php echo base_url("index.php/record/submitForm");?>" method="post" class="mdl-grid">
+            <div class="mdl-textfield mdl-js-textfield textfield-demo mdl-cell mdl-cell--4-col">
+                <input class="mdl-textfield__input" type="text" id="sample1" name="textField" />
+                <label class="mdl-textfield__label" for="sample1">Text...</label>
             </div>
-        </div>
-        <!-- /.row -->
 
-        <div class="row">
-            <div class="col-lg-6">
-
-                <form role="form" action="<?php echo base_url("index.php/record/submitForm");?>" method="post">
-
-                    <div class="form-group">
-                        <label>Text Input</label>
-                        <input class="form-control" type="text" name="textInput">
-                        <p class="help-block">Example block-level help text here.</p>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Static Control</label>
-                        <p class="form-control-static">email@example.com</p>
-                    </div>
-
-                    <div class="form-group">
-                        <label>File input</label>
-                        <input type="file" name="file">
-                    </div>
-
-                    <div class="form-group">
-                        <label>Text area</label>
-                        <textarea class="form-control" rows="3" name="textArea"></textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Checkboxes</label>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="1" name="checkbox[]">Checkbox 1
-                            </label>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="2" name="checkbox[]">Checkbox 2
-                            </label>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="3" name="checkbox[]">Checkbox 3
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Inline Checkboxes</label>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" value="1" name="inlineCheckbox[]">1
-                        </label>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" value="2" name="inlineCheckbox[]">2
-                        </label>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" value="3" name="inlineCheckbox[]">3
-                        </label>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Radio Buttons</label>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Radio 1
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Radio 2
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Radio 3
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Inline Radio Buttons</label>
-                        <label class="radio-inline">
-                            <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked>1
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">2
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option3">3
-                        </label>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Selects</label>
-                        <select class="form-control" name="singleSelect">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Multiple Selects</label>
-                        <select multiple class="form-control" name="multipleSelect">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-
-                    <button type="submit" class="btn btn-default">Submit Button</button>
-                    <button type="reset" class="btn btn-default">Reset Button</button>
-
-                </form>
-
+            <div class="demo-separator mdl-cell--1-col"></div>
+            <div class="demo-separator mdl-cell--1-col"></div>
+            <!-- Numeric Textfield with Floating Label -->
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo mdl-cell mdl-cell--4-col">
+                <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4" name="floatingTextField"/>
+                <label class="mdl-textfield__label" for="sample4">Number...</label>
+                <span class="mdl-textfield__error">Input is not a number!</span>
             </div>
-            <div class="col-lg-6">
-                <h1>Disabled Form States</h1>
 
-                <form role="form">
-
-                    <fieldset disabled>
-
-                        <div class="form-group">
-                            <label for="disabledSelect">Disabled input</label>
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input" disabled>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="disabledSelect">Disabled select menu</label>
-                            <select id="disabledSelect" class="form-control">
-                                <option>Disabled select</option>
-                            </select>
-                        </div>
-
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox">Disabled Checkbox
-                            </label>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Disabled Button</button>
-
-                    </fieldset>
-
-                </form>
-
-                <h1>Form Validation</h1>
-
-                <form role="form">
-
-                    <div class="form-group has-success">
-                        <label class="control-label" for="inputSuccess">Input with success</label>
-                        <input type="text" class="form-control" id="inputSuccess">
-                    </div>
-
-                    <div class="form-group has-warning">
-                        <label class="control-label" for="inputWarning">Input with warning</label>
-                        <input type="text" class="form-control" id="inputWarning">
-                    </div>
-
-                    <div class="form-group has-error">
-                        <label class="control-label" for="inputError">Input with error</label>
-                        <input type="text" class="form-control" id="inputError">
-                    </div>
-
-                </form>
-
-                <h1>Input Groups</h1>
-
-                <form role="form">
-
-                    <div class="form-group input-group">
-                        <span class="input-group-addon">@</span>
-                        <input type="text" class="form-control" placeholder="Username">
-                    </div>
-
-                    <div class="form-group input-group">
-                        <input type="text" class="form-control">
-                        <span class="input-group-addon">.00</span>
-                    </div>
-
-                    <div class="form-group input-group">
-                        <span class="input-group-addon"><i class="fa fa-eur"></i></span>
-                        <input type="text" class="form-control" placeholder="Font Awesome Icon">
-                    </div>
-
-                    <div class="form-group input-group">
-                        <span class="input-group-addon">$</span>
-                        <input type="text" class="form-control">
-                        <span class="input-group-addon">.00</span>
-                    </div>
-
-                    <div class="form-group input-group">
-                        <input type="text" class="form-control">
-                        <span class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-search"></i></button></span>
-                    </div>
-
-                </form>
+            <div class="demo-separator mdl-cell--1-col"></div>
+            <!-- Floating Multiline Textfield -->
+            <div class="mdl-textfield mdl-js-textfield textfield-demo mdl-cell mdl-cell--4-col">
+                <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" name="multilineText" ></textarea>
+                <label class="mdl-textfield__label" for="sample5">Text lines...</label>
             </div>
-        </div>
-        <!-- /.row -->
 
+            <div class="demo-separator mdl-cell--1-col"></div>
+            <!-- Default Slider -->
+            <div class="mdl-cell mdl-cell--4-col"><input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="0" tabindex="0" name="slider"/></div>
+
+            <div class="mdl-cell mdl-cell--4-col">
+                <input type="file" name="file">
+                <label >File input</label>
+            </div>
     </div>
-    <!-- /.container-fluid -->
+    <div class="mdl-card__actions mdl-card--border">
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-cell mdl-cell--2-col" type="submit">
+        Submit
+    </button>
 
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-cell mdl-cell--2-col" type="reset">
+        Reset
+    </button>
+    </div>
+    </form>
 </div>
+
+

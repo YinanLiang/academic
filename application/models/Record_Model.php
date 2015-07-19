@@ -16,8 +16,8 @@ class Record_Model extends CI_Model {
     public function insert($data) {
 
         //convert checkbox data to array
-        $data['checkbox'] = implode(', ', $data['checkbox']);
-        $data['inlineCheckbox'] = implode(', ', $data['inlineCheckbox']);
+        //$data['checkbox'] = implode(', ', $data['checkbox']);
+        //$data['inlineCheckbox'] = implode(', ', $data['inlineCheckbox']);
 
         $this->db->insert('forms', $data);
     }

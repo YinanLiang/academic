@@ -27,40 +27,44 @@ class Site extends CI_Controller {
 
     public function index()
 	{
-		$this->load->view('templates/header');
+		$data['title'] = 'Home';
+        $this->load->view('templates/header', $data);
         $this->load->view('dashboard/index');
         $this->load->view('templates/footer');
 	}
 
     public function about()
     {
-        $this->load->view('templates/header');
+        $data['title'] = 'About';
+        $this->load->view('templates/header', $data);
         $this->load->view('about/index');
         $this->load->view('templates/footer');
     }
 
     public function contact()
     {
-        $this->load->view('templates/header');
+        $data['title'] = 'Contact';
+        $this->load->view('templates/header', $data);
         $this->load->view('contact/index');
         $this->load->view('templates/footer');
     }
 
     public function form()
     {
-        $this->load->view('templates/header');
+        $data['title'] = 'Form';
+        $this->load->view('templates/header', $data);
         $this->load->view('form/index');
         $this->load->view('templates/footer');
     }
 
     public function table()
     {
-
+        $data['title'] = 'Table';
         //Fetch fields of the table
         $data['fields'] = $this->record_model->getTableFields();
         //Fetch all records
         $data['records'] = $this->record_model->select(0);
-        $this->load->view('templates/header');
+        $this->load->view('templates/header', $data);
         $this->load->view('table/index', $data);
         $this->load->view('templates/footer');
     }
