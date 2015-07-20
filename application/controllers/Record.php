@@ -25,7 +25,7 @@ class Record extends CI_Controller {
         //Fetch fields of the table
         $data['fields'] = $this->record_model->getTableFields();
         //Fetch all records
-        $data['records'] = $this->record_model->select(0);
+        $data['records'] = $this->record_model->select($numRows);
         $this->load->view('templates/header', $data);
         $this->load->view('table/index', $data);
         $this->load->view('templates/footer');

@@ -69,5 +69,13 @@ class Site extends CI_Controller {
         $this->load->view('templates/footer');
     }
 
+    public function pec()
+    {
+        $data['title'] = 'PEC Form';
+        $this->load->view('templates/header', $data);
+        $this->load->view('pec/form');
+        $this->load->view('templates/footer');
+    }
+
 }
 

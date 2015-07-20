@@ -110,6 +110,7 @@ echo doctype('html5');
             <a class="mdl-navigation__link" href="<?php echo base_url("index.php/site/contact")?>"><i class="mdl-color-text--blue-grey-400 material-icons">home</i>Contact</a>
             <a class="mdl-navigation__link" href="<?php echo base_url("index.php/site/form")?>"><i class="mdl-color-text--blue-grey-400 material-icons">home</i>Form</a>
             <a class="mdl-navigation__link" href="<?php echo base_url("index.php/site/table")?>"><i class="mdl-color-text--blue-grey-400 material-icons">home</i>Table</a>
+            <a class="mdl-navigation__link" href="<?php echo base_url("index.php/site/pec")?>"><i class="mdl-color-text--blue-grey-400 material-icons">home</i>PEC Form</a>
             <div class="mdl-layout-spacer"></div>
             <a class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons">help_outline</i></a>
         </nav>

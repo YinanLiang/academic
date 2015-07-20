@@ -8,9 +8,9 @@
 ?>
 
 <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
-    <div class="mdl-card__supporting-text">
         <!-- Simple Textfield -->
         <form action="<?php echo base_url("index.php/record/submitForm");?>" method="post" class="mdl-grid">
+            <div class="mdl-card__supporting-text">
             <div class="mdl-textfield mdl-js-textfield textfield-demo mdl-cell mdl-cell--4-col">
                 <input class="mdl-textfield__input" type="text" id="sample1" name="textField" />
                 <label class="mdl-textfield__label" for="sample1">Text...</label>
