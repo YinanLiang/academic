@@ -18,7 +18,7 @@ class Pec extends CI_Controller {
 
 
     public function submitForm() {
-
+        $this->Pec_Model->insert($_POST);
     }
 
 }

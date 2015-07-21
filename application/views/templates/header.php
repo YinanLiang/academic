@@ -14,8 +14,9 @@ echo doctype('html5');
     <title>Academic Section</title>
     <link rel="stylesheet" href="<?php echo base_url("assets/material.min.css");?>">
     <link rel="stylesheet" href="<?php echo base_url("assets/styles.css");?>">
-    <script src="<?php echo base_url("assets/material.min.js");?>"></script>
-    <!-- link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" -->
+
+    <!-- datepicker -->
+    <link rel="stylesheet" media="screen" type="text/css" href="<?php echo base_url("assets/datepicker/css/datepicker.css");?>" />
 
     <!-- self hosted material icon fonts -->
     <style>

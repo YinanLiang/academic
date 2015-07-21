@@ -15,6 +15,13 @@
 </div>
 <!-- /.demo-layout... -->
 
+<script src="<?php echo base_url("assets/material.min.js");?>"></script>
+<!-- load the jQuery library -->
+<script src="<?php echo base_url("assets/js/jquery/dist/jquery.min.js");?>" type="text/javascript"></script>
+<script src="<?php echo base_url("assets/js/global.js");?>" type="text/javascript"></script>
+<!-- load datepicker -->
+<script src="<?php echo base_url("assets/datepicker/js/datepicker.js");?>" type="text/javascript"></script>
+
 </body>
 </html>
 

@@ -19,7 +19,7 @@ class Pec_Model extends CI_Model {
         //$data['checkbox'] = implode(', ', $data['checkbox']);
         //$data['inlineCheckbox'] = implode(', ', $data['inlineCheckbox']);
 
-        $this->db->insert('forms', $data);
+        $this->db->insert('pec', $data);
     }
 
     public function select($numRows) {
